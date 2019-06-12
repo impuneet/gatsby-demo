@@ -1,6 +1,5 @@
 import React from 'react'
 import Layout from '../components/layout'
-import { graphql, Link } from 'gatsby'
 import styles from './index.module.scss'
 import { Link } from 'gatsby'
 
@@ -14,7 +13,9 @@ export default () => (
       .
     </h1>
     <p>I’m a <strong>Full Stack developer</strong>, <strong>designer</strong>, and <strong>chef</strong> from India. I build open source projects and write the missing instruction manuals of the web. </p>
-    <p>I created this site to document everything............... I learn, and share a bit of <a href="https://www.iampuneet.in">myself</a> with the world. This website has no bullshit, no ads, no sponsored posts, and no paywalls. If you enjoy my content, please consider <a href="https://ko-fi.com/iampuneet" target="_blank">supporting what I do.</a></p>
+    <p>I created this site to document everything I learn, and share a bit of <a href="https://www.iampuneet.in">myself</a> with the world. This website has no bullshit, no ads, no sponsored posts, and no paywalls. If you enjoy my content, please consider <a href="https://ko-fi.com/iampuneet" target="_blank">supporting what I do.</a></p>
+
+
     <p>
       Currently, I work with Angular, React, and Node.js. I'm also learning Microservice Architecture in Lamda.
       Down the line, I'm hoping to gain a good understanding of Javascript and CS
@@ -58,3 +59,4 @@ export default () => (
     </p>
   </Layout>
 )
+
