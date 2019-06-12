@@ -8,17 +8,15 @@ export default () => (
     <h1 className={styles.heading}>
       {'Hi, I\'m'}{' '}
       <div className={styles.rainbowBackground}>
-        <span className={styles.name}>iampuneet</span>
+        <span className={styles.name}>Puneet Sharma</span>
       </div>
       .
     </h1>
+    <p>I’m a <strong>Full Stack developer</strong>, <strong>designer</strong>, and <strong>chef</strong> from India. I build open source projects and write the missing instruction manuals of the web. </p>
+    <p>I created this site to document everything I learn, and share a bit of <a href="https://www.iampuneet.in">myself</a> with the world. This website has no bullshit, no ads, no sponsored posts, and no paywalls. If you enjoy my content, please consider <a href="https://ko-fi.com/iampuneet" target="_blank">supporting what I do.</a></p>
     <p>
-      I'm a Software Engineer based in Oakland, CA. I'm interested in
-      full&#x2011;stack web development &amp; data engineering.
-    </p>
-    <p>
-      Currently, I work with React, Vue, and Node.js. I'm also learning Python.
-      Down the line, I'm hoping to gain a good understanding of Java and CS
+      Currently, I work with Angular, React, and Node.js. I'm also learning Microservice Architecture in Lamda.
+      Down the line, I'm hoping to gain a good understanding of Javascript and CS
       fundamentals.{' '}
       <Link to={'/blog'}>Read about what I'm learning on my blog.</Link> Usually
       updated weekly.
