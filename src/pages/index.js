@@ -6,6 +6,12 @@ import Header from '../components/header'
 import { Link } from 'gatsby'
 
 export default ({ data }) => {
+  const linkColor = () => {
+    const hue = () => Math.floor(Math.random() * 156) + 90
+    let linkColor = `2px solid rgb(${hue()}, ${hue()}, ${hue()})`
+    return linkColor
+  }
+  
   return (
     <Layout>
       <h1 className={styles.heading}>
