@@ -6,9 +6,9 @@ import { Link } from 'gatsby'
 export default () => (
   <Layout>
     <h1 className={styles.heading}>
-      {"Hi, I'm"}{' '}
+      {'Hi, I\'m'}{' '}
       <div className={styles.rainbowBackground}>
-        <span className={styles.name}>Radhika Morabia</span>
+        <span className={styles.name}>iampuneet</span>
       </div>
       .
     </h1>
