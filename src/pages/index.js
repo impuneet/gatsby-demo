@@ -11,7 +11,8 @@ export default ({ data }) => {
     let linkColor = `2px solid rgb(${hue()}, ${hue()}, ${hue()})`
     return linkColor
   }
-  
+  console.log(data);
+
   return (
     <Layout>
       <h1 className={styles.heading}>
@@ -45,7 +46,7 @@ export default ({ data }) => {
         Currently, I work with Angular, React, and Node.js. I'm also learning Microservice Architecture in Lamda.
         Down the line, I'm hoping to gain a good understanding of Javascript and CS
         fundamentals.{' '}
-        <Link to={'/blog'}>Read about what I'm learning on my blog.</Link> Usually
+        <Link to={'/blog'}>Read about what I'm learning on my blog.....</Link> Usually
         updated weekly.
       </p>
       <p>
