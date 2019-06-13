@@ -64,7 +64,7 @@ export default ({ data }) => {
             <p>Don't miss our launch, get notified when we're ready!</p>
             <p><small>We don't share your email with any third party companies, promise!</small></p>
             <form action="#" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
-              <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Your email" required>
+              <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Your email" required /> 
               <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="" tabindex="-1" value=""></div>
               <div class="clear"></div>
               <button name="subscribe" id="mc-embedded-subscribe" class="button" type="submit">Subscribe me</button>
