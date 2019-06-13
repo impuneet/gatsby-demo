@@ -38,8 +38,8 @@ export default ({ data }) => {
             </p>
             <p>{node.frontmatter.date}</p>
           </div>
-          <div className={styles.blogDescription} >
-            <p>This is a very short desciptions to the blog and we are touching this mid level description just for example purpose
+          <div>
+            <p  className={styles.blogDescription} >This is a very short desciptions to the blog and we are touching this mid level description just for example purpose
             </p>
           </div>
 
@@ -57,20 +57,20 @@ export default ({ data }) => {
         newsletter below. I write about my journey in the tech industry and
         sprinkle in some useful advice.
       </p>
-      <form
-        action='https://tinyletter.com/rmorabia'
-        method='post'
-        target='popupwindow'
-        onsubmit="window.open('https://tinyletter.com/rmorabia', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"
-      >
-        <input
-          type='email'
-          name='email'
-          id='tlemail'
-          placeholder='hi@whatever.com'
-        />
-        <input className='submit' type='submit' value='Subscribe' />
-      </form>
+      <div class="container">
+        <div class="card">
+            <h1>Kontify.me</h1>
+            <h2>Coming soon...</h2>
+            <p>Don't miss our launch, get notified when we're ready!</p>
+            <p><small>We don't share your email with any third party companies, promise!</small></p>
+            <form action="#" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
+              <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Your email" required>
+              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="" tabindex="-1" value=""></div>
+              <div class="clear"></div>
+              <button name="subscribe" id="mc-embedded-subscribe" class="button" type="submit">Subscribe me</button>
+            </form>
+          </div>
+</div>
       <p>
         If you want to keep up with a less polished version of me, I'm pretty
       active on Twitter at{' '}
