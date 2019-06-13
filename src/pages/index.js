@@ -26,17 +26,18 @@ export default ({ data }) => {
       { data.allMarkdownRemark.edges.map(({ node }) => (
         <div key='node.id'>
           <div className='blogPost'>
-            <p>
-              <Link
-                to={node.fields.slug}
-                style={{
-                  borderBottom: linkColor(),
-                  font-weight: 700
-                }}
-              >
-                {node.frontmatter.title}
-              </Link>
-            </p>
+            <strong>
+              <p>
+                <Link
+                  to={node.fields.slug}
+                  style={{
+                    borderBottom: linkColor()
+                  }}
+                > 
+                  {node.frontmatter.title}
+                </Link> 
+              </p>
+            </strong>
             <p>{node.frontmatter.date}</p>
           </div>
           <div className={styles.blogDescription} >
