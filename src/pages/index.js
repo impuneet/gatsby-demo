@@ -57,17 +57,16 @@ export default ({ data }) => {
         newsletter below. I write about my journey in the tech industry and
         sprinkle in some useful advice.
       </p>
-      <div class="container">
-        <div class="card">
+      <div  className={styles.container}>
+        <div className={styles.card}>
             <h1>Kontify.me</h1>
-            <h2>Coming soon...</h2>
             <p>Don't miss our launch, get notified when we're ready!</p>
-            <p><small>We don't share your email with any third party companies, promise!</small></p>
-            <form action="#" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
-              <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Your email" required ></input> 
-              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="" tabindex="-1" value=""></div>
-              <div class="clear"></div>
-              <button name="subscribe" id="mc-embedded-subscribe" class="button" type="submit">Subscribe me</button>
+            <form action="#" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className={styles.validate}>
+              <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Your email" />
+              <div  aria-hidden="true"><input type="text" name="" tabindex="-1" value="">
+              </div>
+              <div class={styles.clear}></div>
+              <button name="subscribe" id="mc-embedded-subscribe" className={styles.button} type="submit">Subscribe me</button>
             </form>
           </div>
 </div>
