@@ -30,7 +30,8 @@ export default ({ data }) => {
               <Link
                 to={node.fields.slug}
                 style={{
-                  borderBottom: linkColor()
+                  borderBottom: linkColor(),
+                  font-weight: 700
                 }}
               >
                 {node.frontmatter.title}
@@ -38,10 +39,11 @@ export default ({ data }) => {
             </p>
             <p>{node.frontmatter.date}</p>
           </div>
-          <div  className={styles.blogDescription} >
+          <div className={styles.blogDescription} >
             <p>This is a very short desciptions to the blog and we are touching this mid level description just for example purpose
             </p>
           </div>
+
         </div>
       ))}
       <p>
@@ -102,6 +104,7 @@ export const query = graphql`
           frontmatter {
             title
             date(formatString: "MMMM DD, YYYY")
+            tags
           }
           excerpt
         }

@@ -1,6 +1,12 @@
 ---
 title: "Study Habits For Programmers Part I: Let's make a study plan."
 date: "2019-05-12"
+tags:
+  - javascript
+  - nodejs
+  - imagescript
+categories:
+  - JavaScript
 ---
 
 I think most advice about learning programming is terrible.

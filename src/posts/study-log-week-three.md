@@ -1,6 +1,12 @@
 ---
 title: "Learning Log Week 3: Linux, Horoscopes, and Py"
 date: "2019-06-10"
+tags:
+  - javascript
+  - nodejs
+  - imagescript
+categories:
+  - JavaScript
 ---
 
 So uh... I broke my computer this week.
