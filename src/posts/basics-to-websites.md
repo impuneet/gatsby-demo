@@ -1,6 +1,13 @@
 ---
 title: 'How to Go From Knowing the Basics of JavaScript To Actually Building Websites'
 date: "2018-03-02"
+tags:
+  - javascript
+  - nodejs
+  - imagescript
+categories:
+  - JavaScript
+
 ---
 
 When I started learning JavaScript, I wanted to jump into building projects as fast as possible.

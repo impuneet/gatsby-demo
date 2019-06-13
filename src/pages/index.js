@@ -3,6 +3,7 @@ import Layout from '../components/layout'
 import styles from './index.module.scss'
 import { Link } from 'gatsby'
 import Header from '../components/header'
+
 export default ({ data }) => {
   const linkColor = () => {
     const hue = () => Math.floor(Math.random() * 156) + 90
@@ -37,9 +38,12 @@ export default ({ data }) => {
             </p>
             <p>{node.frontmatter.date}</p>
           </div>
+          <div  className={styles.blogDescription} >
+            <p>This is a very short desciptions to the blog and we are touching this mid level description just for example purpose
+            </p>
+          </div>
         </div>
       ))}
-
       <p>
         Currently, I work with Angular, React, and Node.js. I'm also learning Microservice Architecture in Lamda.
         Down the line, I'm hoping to gain a good understanding of Javascript and CS
