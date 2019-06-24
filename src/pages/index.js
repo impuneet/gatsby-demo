@@ -32,9 +32,9 @@ export default ({ data }) => {
                 style={{
                   borderBottom: linkColor()
                 }}
-              > 
+              >
                 {node.frontmatter.title}
-              </Link> 
+              </Link>
             </p>
             <p>{node.frontmatter.date}</p>
           </div>
@@ -57,19 +57,23 @@ export default ({ data }) => {
         newsletter below. I write about my journey in the tech industry and
         sprinkle in some useful advice.
       </p>
-      <div  className={styles.container}>
-        <div className={styles.card}>
-          <h1>Kontify.me</h1>
-          <p>Don't miss our launch, get notified when we're ready!</p>
-          <form action="#" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className={styles.validate}>
-            <input type="email" value="" name="EMAIL" className={styles.email} id="mce-EMAIL" placeholder="Your email" />
-            <div  aria-hidden="true"><input type="text" name="" tabindex="-1" value="" />
+                
+      <section class="m-subscribe1">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <h2 class="m-subscribe1__title">Subscribe to Our Newsletter</h2>
             </div>
-            <div className={styles.clear}></div>
-            <button name="subscribe" id="mc-embedded-subscribe" className={styles.button} type="submit">Subscribe me</button>
-          </form>
-        </div>
+            <div class="col-12 col-lg-6">
+              <form class="form-inline m-subscribe1__form">
+                <input type="email" class="form-control" id="cta_newsletter_email" placeholder="Email...">
+                  <button type="submit" class="btn btn-primary mb-2">SUBSCRIBE</button>
+        </form>
       </div>
+            </div>
+          </div>
+</section>
+
       <p>
         If you want to keep up with a less polished version of me, I'm pretty
       active on Twitter at{' '}
