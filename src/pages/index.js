@@ -65,7 +65,7 @@ export default ({ data }) => {
       </div>
       <div class="col-12 col-lg-6">
         <form class="form-inline m-subscribe1__form">
-          <input type="email" class="form-control" id="cta_newsletter_email" placeholder="Email...">
+          <input type="email" class="form-control" id="cta_newsletter_email" placeholder="Email..."/>
           <button type="submit" class="btn btn-primary mb-2">SUBSCRIBE</button>
         </form>
       </div>
