@@ -32,9 +32,9 @@ export default ({ data }) => {
                 style={{
                   borderBottom: linkColor()
                 }}
-              >
+              > 
                 {node.frontmatter.title}
-              </Link>
+              </Link> 
             </p>
             <p>{node.frontmatter.date}</p>
           </div>
@@ -57,23 +57,22 @@ export default ({ data }) => {
         newsletter below. I write about my journey in the tech industry and
         sprinkle in some useful advice.
       </p>
-                
       <section class="m-subscribe1">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-lg-6">
-              <h2 class="m-subscribe1__title">Subscribe to Our Newsletter</h2>
-            </div>
-            <div class="col-12 col-lg-6">
-              <form class="form-inline m-subscribe1__form">
-                <input type="email" class="form-control" id="cta_newsletter_email" placeholder="Email...">
-                  <button type="submit" class="btn btn-primary mb-2">SUBSCRIBE</button>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-6">
+        <h2 class="m-subscribe1__title">Subscribe to Our Newsletter</h2>
+      </div>
+      <div class="col-12 col-lg-6">
+        <form class="form-inline m-subscribe1__form">
+          <input type="email" class="form-control" id="cta_newsletter_email" placeholder="Email...">
+          <button type="submit" class="btn btn-primary mb-2">SUBSCRIBE</button>
         </form>
       </div>
-            </div>
-          </div>
+    </div>
+  </div>
+  </div>
 </section>
-
       <p>
         If you want to keep up with a less polished version of me, I'm pretty
       active on Twitter at{' '}
