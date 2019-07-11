@@ -1,76 +1,83 @@
 ---
-title: "Study Habits For Programmers Part I: Let's make a study plan."
-date: "2019-05-12"
-tags:
-  - javascript
-  - nodejs
-  - imagescript
+date: 2019-04-09
+title: 'Understanding Streams in Node JS'
+template: post
+thumbnail: '../thumbnails/snake.png'
+slug: understanding-streams-in-node-js
 categories:
   - JavaScript
+tags:
+  - javascript
+  - terminal
+  - node
 ---
 
-I think most advice about learning programming is terrible.
-
-This applies both to beginning programmers and folks further along, trying to learn their next language or pick up the hot new framework.
-
-It seems like most programmers end up learning things despite their bad study habits, instead of being conscious about how we go about learning things.
-
-## What's this series about?
-
-I'm embarking on a grand learning journey to learn Python, master Node, and get good at algorithms. I will be doing this full-time for the next few months. I will be writing about this journey publicly, and along the way, I'm going to be sharing some thoughts on how I'm going about this.
-
-[I've done this before.](https://github.com/rmorabia/rmorabia.github.io/tree/7af140f56d4241f3412fffd8c7f5ac0a744d0c16/_posts) I learned front-end development and landed my first tech job within 7 months. [I also had a pretty popular blog about productivity and self-development](http://web.archive.org/web/20140510222033/http://www.rmorabia.com:80/) from my high school days. I taught myself calculus, combinatorics, and marketing. Learning about learning back in my teens has made my tech career move faster than I expected. I firmly believe the ability to learn quickly is the most important meta skill that I have.
-
-This series is for everyone. Whether you've never programmed before or you're trying to learn a new language 10 years in, there's always room for improvement. The faster we learn, the faster we can write the code we want to write.
-
-The expected format is to sprinkle in little nuggets in my actual learning updates, and occasionally collate those into organized posts like this one. 
+As NodeJS is known for it\'s asynchronous nature and have many modules that we used in daily code base but don't get deeper into it.
+One of the core modules is Streams.Streams allow us to handle data flow asynchronously.Two data handling approaches are there in NodeJS.
+**1. Buffered approach**: Buffered approach say that reciever can read the data only if whole data is written to the buffer.
  
-##  Let's make a study plan.
+**2. Streams approach**:In Streamed approach data arrives in chunks and also can be read in chunks this can be a  single part of the data.
 
-In order to actually learn something, we need to figure out what we're actually trying to learn.
+![These are the  Streams available](https://res.cloudinary.com/dwnvnfejf/image/upload/v1562829945/blog/stream-nodejs/stream-types-300x248.png)
 
-Sounds simple, right?
 
-I said above that my grand study plan is to "learn Python, master Node, and get good at algorithms." How do I actually go about that?
+<div class="filename">UserInterface.js</div>
 
-There's a few different things we need to define:
+```js
+const fs = require("fs");
+const file = fs.createWriteStream("./big.file");
+for (let i = 0; i <= 1e6; i++) {
+	file.write(
+	    "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n"
+	)};
+	file.end();
+```
 
-1) What is our success point? (ie. App to build, course to finish)
-2) What's our timeline? (ie. 6 weeks, 6 months)
-3) What is the daily (or weekly) process for getting there? (ie. Work on this one hour a day, work on this all day on Saturday)
-4) What tools are we using? (ie. Books, courses, etc.)
+We have created a file using Writable Stream. fs module in node js can be used to read from and write to files using a Stream interface.Running the script above generates a file that’s about ~400 MB.
 
-Let's answer that for each one of my goals.
+**Read the same big file using read Stream :**
 
-### Learn Python
+<div class="filename">stream1.js</div>
 
-1) My success point is making a Django REST application.
-2) I plan to at least be making the application in 6 weeks.
-3) My process is to work on going through my Python book for a timeblock of 3-4 hours a day, 6 days a week.
-4) I'm using [Python Crash Course, 2nd Ed.](https://nostarch.com/pythoncrashcourse2e). If I don't like that, I'll pick up a [Treehouse subscription](http://teamtreehouse.com).
+```js
+const fs = require("fs");
+const server = require("http").createServer();
 
-### Master Node
+server.on("request", (req, res) => {
+	fs.readFile("./big.file", (err, data) => {
+	if (err) throw err;
+		res.end(data);
+	});
+});
+server.listen(8000);
+```
+Then I connected to the server. Note what happened to the memory consumed:
 
-1) My success point is finishing the [Andrew Mead course on Node](https://www.udemy.com/the-complete-nodejs-developer-course-2/) and building my side project, [favorite.actor](http://favorite.actor).
-2) I plan to be 100% done with the course and have at least an MVP version of the side project built in 2 months.
-3) My process is to work on the course first, then work on the project, for a timeblock of 3-4 hours a day, 6 days a week.
-4) The tools are part of the goal.
+![enter image description here](https://res.cloudinary.com/dwnvnfejf/image/upload/v1562836283/blog/stream-nodejs/pic3-455x174.png)
 
-### Get good with algorithms
+> Optimised Solution for data transformation
 
-1) I want to finish at least one random [Leetcode](http://leetcode.com) algorithm question a day.
-2) There is no clear end to this, but I want to do at least 5 a week.
-3) My process is to spend an hour on this every day, supplementing with courses with any extra time.
-4) The tools include Leetcode, [Algorithms I from Princeton](https://www.coursera.org/learn/algorithms-part1), [The Algorithm Design Manual](http://www.algorist.com/), and [Colt Steele's algorithms course](https://www.udemy.com/js-algorithms-and-data-structures-masterclass/).
+**Time Efficiency :** There is great behaviour of Streams that is piping.basically you can pipe two of the stream where output of one stream is an input to the other.
 
-I have some other goals along the way (mostly projects I want to build), but this is a good overview of my plans for now.
+What happens is “data” (chunk) arrives at the “stream 1" which is piped to stream 2" which can further be piped to other streams.
 
-We can only start to study efficiently if we have an actual plan in place for how we want to study. There's a lot of study hacks out there, but they don't matter unless you have a fundamental goal in place. 
+With Pipes : 
+![enter image description here](https://res.cloudinary.com/dwnvnfejf/image/upload/v1562836462/blog/stream-nodejs/pic4-1024x409.png)
 
-There's loads to break down here -- How do you decide on the timeline? How do you choose resources? What's a good success point? What's a good learning routine?
+```js
+const fs = require("fs");
+const server = require("http").createServer();
+server.on("request", (req, res) => {
+	const src = fs.createReadStream("./big.file");
+	src.pipe(res);
+});
+server.listen(8000);
+```
 
-I want to go into each of these topics in detail, so I'll save them for other posts in this series. For now, the most universal answer is just to ask and read around. Ask other people how they learned things. Read posts about how people learned things. That'll help point you in the right direction to start.
+## Conclusion
 
-I'm not sure about my writing schedule for this series, but I will be writing about my actual progress in a weekly series. When I get time in-between, I'll keep going with the actual study habits.
+This is how we can parallelize multiple stages a data chunk might go through,  This strategy is called as pipe lining.
 
-Thanks for reading!
+Nodejs allows us to pipeline our tasks with the help of streams.\r\n\r\nHence Node js works on single thread but this doesn\'t means we can\'t do two tasks or process at a time.This can be done via Child Processes in NodeJs.
+
+Read my next article regarding child process in Node JS.

@@ -8,9 +8,8 @@ export default ({ data }) => {
   const linkColor = () => {
     const hue = () => Math.floor(Math.random() * 156) + 90
     let linkColor = `2px solid rgb(${hue()}, ${hue()}, ${hue()})`
-    return linkColor 
+    return linkColor
   }
-  
   return (
     <Layout>
       <h1 className={styles.heading}>
@@ -57,18 +56,16 @@ export default ({ data }) => {
         newsletter below. I write about my journey in the tech industry and
         sprinkle in some useful advice.
       </p>
-      <section class="m-subscribe1">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-lg-6">
-              <h2 class="m-subscribe1__title">Subscribe to Our Newsletter</h2>
+      <section   className={styles.m-subscribe1}>
+        <div   className={styles.container} >
+          <div className={styles.row} >
+            <div className= {styles.col-12 } >
+              <h2 className= {styles.m-subscribe1__title } >Subscribe to Our Newsletter</h2>
             </div>
-            <div class="col-12 col-lg-6">
-              <form class="form-inline m-subscribe1__form">
+              <form className={styles.form-inline m-subscribe1__form}>
                 <input type="email" class="form-control" id="cta_newsletter_email" placeholder="Email..." />
                 <button type="submit" class="btn btn-primary mb-2">SUBSCRIBE</button>
               </form>
-            </div>
           </div>
         </div>
       </section>
