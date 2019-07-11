@@ -1,82 +1,43 @@
 ---
-title: "Learning Log Week 1: SSH, Gatsby, and Py"
-date: "2019-05-19"
-tags:
-  - javascript
-  - nodejs
-  - imagescript
+date: 2019-04-09
+title: 'Structuring Your Node JS Application'
+template: post
+thumbnail: '../thumbnails/snake.png'
+slug: understanding-streams-in-node-js
 categories:
   - JavaScript
+tags:
+  - javascript
+  - terminal
+  - node
 ---
 
-This week's post is actually a culmination of two weeks. I just moved to the Bay Area two weeks ago, so I gave myself the first week to settle in and set up my computers for development. This week also involved a lot of work on my learning routine. It's not perfect yet, so I haven't been as productive as I will be further on.
+A Very little Design and Architecture knowledge are spread around NODEJS eco-system. You already know about MVC but MVC here can be delivery mechanism,not an application architecture.Most of the Applications in NODEJS follows this pattern then what\'s wrong in that ?
 
-So, this post is actually my first two weeks of work. Let's get to it.
+![enter image description here](https://res.cloudinary.com/dwnvnfejf/image/upload/v1562842629/blog/microservices/surprise-gif-2-300x191.gif)
 
-## Setting Up a Lo-Fi Dev Process
+The reason is, Can you really describe your entire business logic, service layer & communication  with other layer services in only two Controllers & Models.
 
-I have a 2GB Chromebook (Unix-based) that's super portable. I stole a 4GB ThinkPad from 2013 from my sister. 
+For Medium scale NodeJS applications monoliths are bad because having dependencies over others can often lead to spaghetti code. I have seen some smart architects those who modularize it.
+In a Modularized structure adding new Features in a product to realize the impact of their change and fear to break other dependent modules hence\r\nit makes the delivery of the product slower that leads to inappropriate Feature estimations and obviously, that product can become challenging for its scalability.
 
-I don't like throwing perfectly good hardware away. Maybe I'm just too stubborn, but I wanted to make this hardware work for my development process if it was the last thing I did. 4GB has to be enough to work on run of the mill JavaScript and Python stuff.
+Blog Quote:
+ 
 
-I tried WSL, but it ended up slowing my computer down a lot when I would run it as the integrated terminal in VS Code. It would also sometimes just start and never reach the terminal. I also had issues with download speeds -- It seemed to cap at 300 kbps. This would... work, but there's a lot of development friction here.
+> **"Scaling requires scaling of the entire application\"**
 
-So, I decided to try developing on a remote server. Since AWS gives a free year, I don't think there's any harm in trying. (Afterwards, I'm going to be trying to optimize spending less than $1 a month on a server.) It worked perfectly. I just followed the official docs and had an Ubuntu instance up and going pretty quickly.
+Monolithic applications can be successful, but increasingly people are feeling frustrations with them - especially as more  applications are being deployed to the cloud. Change cycles are tied together - a change made to a small part of the application  requires the entire monolith to be rebuilt and deployed. Over time it\'s often hard to keep a good modular structure, making it  harder to keep changes that ought to only affect one module within that module. Scaling requires scaling of the entire application  rather than parts of it that require greater resource.
 
-I have to wrap my brain around the concept that this is just like my local computer, but it only has access to my code stuff. I'm looking forward to diving further into servers and command line stuff soon. I used to run Linux as a hobby, so I think this'll be an easy transition.
+> **Blog Quote: "So what does the architecture of   your application scream?\"**
 
-The best part of this is that VS Code just came out with [some cool remote development extensions](https://code.visualstudio.com/docs/remote/remote-overview) that make developing on an SSH server almost seamless.
+...if you were looking at the architecture of a library, you’d likely see a grand entrance, an area for check-in-out clerks, reading areas, small conference rooms, and gallery after gallery capable of holding bookshelves for all the books in the library. That architecture would scream: Library .So the solution is to divide  the whole into self-contained components and these self contained components don\'t share files with others. 
 
-My dev process now works across computers and leaves me enough extra CPU to have Spotify + 17 Chrome tabs + all the VSC extensions I want open.
+So you can say it as Microservice architecture which is a set of principles.
 
-The only issue I've found is how do I access `localhost:8000` when localhost is no longer local? The solution is a tool called [ngrok](http://ngrok.com). Very cool, and moderately easy to set up.
+MVC as an Application Architecture that is wrong to do.
 
-I'm kinda happy with this setup now. I'm also pretty happy with the fact that I can open my Chromebook and achieve similar results with just 2GB of RAM. All I need is a wifi connection, which if I'm developing with JS anyway, is a pretty obvious prerequisite.
+## Conclusion
 
-I've been having issues with overloading the RAM (running a local server on a server with 1GB of RAM will do that, it turns out). I'm still working around that. I think the solution is just to view changes on commit, but that feels very unsatisfying compared to watching on every change. I really don't want to spend more money on a bigger server, though. I just want to make it work with this. 
+https://res.cloudinary.com/dwnvnfejf/image/upload/v1562843061/blog/microservices/Capture-e1546678989104-357x400.png
 
-It's not a perfect setup yet, but I'll continue working on this (maybe using [Netlify Dev](https://www.netlify.com/products/dev/)) in the coming weeks. This is definitely better than a local setup.
-
-## Personal Site with Gatsby
-
-I've been going back and forth on the design of this website for months. I've set up confetti using three.js, gone fully bare-bones serif text, and had my backgrounds animate in rainbows.
-
-I'm mixed between two design philosophies. I want a silly, colorful website. I also want a serious, well-designed website. I want to clearly come across as an expert who cares about performance, but also someone fun and friendly.
-
-I think I've finally reached a conclusion. My website will generally follow the [Tufte CSS guidelines](https://edwardtufte.github.io/tufte-css/), except in these cases:
-
-- Make my name an animated rainbow on the front page
-- Add a mouse trail
-- Have the blog entry page include randomized color backgrounds for each post (maybe, we'll see how this looks)
-- Have some random colors in the cards on my Projects page
-- Animated links on hover (fill animation, maybe?)
-
-At the end of this week, I have the basics of the site done.
-
-You can see my progress on the project [here](<https://github.com/rmorabia/rmorabia.github.io/projects/1>). Using GitHub Projects to track this project's requirements has been really nice. I'm going to be doing this with all of my projects now.
-
-I'm done with 7 out of 18 total cards on the GitHub page. 
-
-## Python Crash Course
-
-I'm learning Python through [Python Crash Course, the 2nd Edition](https://nostarch.com/pythoncrashcourse2e). I could've learned faster through another method, but this is the first time I'm trying to learn through a book in a long time, and I want to do it properly. I'm reading every word despite the fact that I'm learning my second language.
-
-This book is for people totally new to programming. If you've programmed before and want to learn Python, go for another book or be ready to skim a lot.
-
-I haven't gotten far enough to really have much commentary on this yet. 
-
-My only big takeaway is that Sublime Text is much better for non-web languages. It was clearly designed for languages like Python and it shows. I'm back to using Sublime for my Python study.
-
-## Conclusion & Next Week
-
-This week was very light on the studying. I had a lot of setting up left to do and had other priorities.
-
-Starting this week, I will be streaming almost every day! I'm going to be doing algorithms 2 days a week, tiny practical projects 2 days a week, and then I'll be reading code one day a week. I bought a mic and everything. Follow along at [twitch.tv/rmorabia](http://twitch.tv/rmorabia).
-
-Other than that, here's what I hope to get done next week:
-
-- Finish [radhika.dev](http://radhika.dev).
-- Continue working through Python Crash Course.
-- Make progress with learning Node ([Andrew Mead Course](https://www.udemy.com/the-complete-nodejs-developer-course-2/))
-
-I hope to continue making these updates each week, so stay tuned. Best way to keep up is just to sign up to the newsletter below. I'll be adding RSS functionality to the blog soon as well.
+Microservice Architecture having self-contained components. Right Way
