@@ -25,13 +25,6 @@ function Canvas() {
       points.push(point)
     }
 
-    document.addEventListener(
-      'mousemove',
-      ({ clientX, clientY }) => {
-        addPoint(clientX - canvas.offsetLeft, clientY - canvas.offsetTop)
-      },
-      false
-    )
 
     const animatePoints = () => {
       ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height)
