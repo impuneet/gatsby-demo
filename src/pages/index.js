@@ -62,10 +62,10 @@ export default ({ data }) => {
             <div className= {styles.col-12 } >
               <h2 className= {styles.m-subscribe1__title } >Subscribe to Our Newsletter</h2>
             </div>
-              <form className={styles.form-inline m-subscribe1__form}>
-                <input type="email" class="form-control" id="cta_newsletter_email" placeholder="Email..." />
-                <button type="submit" class="btn btn-primary mb-2">SUBSCRIBE</button>
-              </form>
+            <form>
+              <input type="email" class="form-control" id="cta_newsletter_email" placeholder="Email..." />
+              <button type="submit" class="btn btn-primary mb-2">SUBSCRIBE</button>
+            </form>
           </div>
         </div>
       </section>
