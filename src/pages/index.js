@@ -109,3 +109,4 @@ export const query = graphql`
     }
   }
 `
+/* className={styles.form-inline m-subscribe1__form} */
