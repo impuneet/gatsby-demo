@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: 'Radhika Morabia',
-    titleTemplate: '%s · Radhika Morabia',
-    description: 'Full-Stack Software Engineer interested in React, Node, JavaScript, and Python',
-    url: 'http://radhika.dev'
+    title: 'Puneet Sharma',
+    titleTemplate: '%s · Puneet Sharma',
+    description: 'Full-Stack Software Engineer interested in Node,Angular & React,JavaScript, and MongoDB',
+    url: 'http://iampuneet.in'
   },
   plugins: [
     'gatsby-plugin-sass',
@@ -35,9 +35,9 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'Radhika Morabia',
-        short_name: 'radhika.dev',
-        start_url: 'https://radhika.dev',
+        name: 'Puneet Sharma',
+        short_name: 'iampuneet',
+        start_url: 'https://iampuneet.in',
         background_color: '#00ff7f',
         theme_color: '#00ff7f',
         display: 'standalone',
