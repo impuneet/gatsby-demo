@@ -10,8 +10,8 @@ export default ({ data }) => (
   <Layout>
     <Helmet>
       <meta charSet='utf-8' />
-      <title>Projects &bull; Radhika Morabia</title>
-      <link rel='canonical' href='https://radhika.dev/projects' />
+      <title>Projects &bull; Puneet Sharma</title>
+      <link rel='canonical' href='https://iampuneet.in/projects' />
     </Helmet>
     <Header headerText='Projects' />
     <p>Here is a selection of projects I am currently excited about.</p>
@@ -20,11 +20,10 @@ export default ({ data }) => (
       <a href='http://github.com/rmorabia'>GitHub</a>.
     </p>
     <hr />
-    <h2>radhika.dev</h2>
+    <h2>onebajaj.capital</h2>
     <Img fluid={data.radhika.childImageSharp.fluid} alt='' />
     <p>
-      Portfolio website featuring canvas animation, static blogging, mobile
-      responsiveness, accessibility, and more.
+      
     </p>
     <p>
       <b>Tools Used:</b> React, Gatsby, SCSS, and JavaScript
