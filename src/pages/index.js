@@ -52,21 +52,21 @@ export default ({ data }) => {
         <Link to={'/blog'}>Read about what I'm learning on my blog.</Link> Usually
         updated weekly.
       </p>
-      <p className={styles.width100}>
+      <p>
         The best way to keep up with what I'm doing is to subscribe to my
         newsletter below. I write about my journey in the tech industry and
         sprinkle in some useful advice.
       </p>
       <section className={styles.newsletterSection} >
         <h2 className={styles.frontPage}>Join the Newsletter</h2>
-        <p>I write about JavaScript, programming, and front-end design. Join over <strong class="pink">6,000</strong> other developers in keeping up with my content. Unsubscribe whenever. <u>Never any spam, ads, or affiliate links.</u></p>
+        <p className={styles.width100}>I write about JavaScript, programming, and front-end design. Join over <strong class="pink">6,000</strong> other developers in keeping up with my content. Unsubscribe whenever. <u>Never any spam, ads, or affiliate links.</u></p>
         <form id="newsletter-form"
           className  = {styles.newsletterForm}
           action='https://tinyletter.com/iampuneet'
           target='popupwindow'
           onsubmit="window.open('https://tinyletter.com/iampuneet', 'popupwindow');return true"
           method="POST">
-          <input type='text' name='email'  className={styles.emailInputText}   id='tlemail' placeholder='hi@whatever.com' />
+          <input type='email' name='email'  className={styles.emailInputText}   id='tlemail' placeholder='hi@whatever.com' />
           <input type="submit" name="submit" className={styles.subscribeButton} id="submit-sidebar" value="Submit" /> 
         </form>
       </section>
