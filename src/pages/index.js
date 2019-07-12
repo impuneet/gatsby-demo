@@ -52,7 +52,7 @@ export default ({ data }) => {
         <Link to={'/blog'}>Read about what I'm learning on my blog.</Link> Usually
         updated weekly.
       </p>
-      <p>
+      <p style = {{width : '100%'}}>
         The best way to keep up with what I'm doing is to subscribe to my
         newsletter below. I write about my journey in the tech industry and
         sprinkle in some useful advice.
@@ -66,7 +66,7 @@ export default ({ data }) => {
           target='popupwindow'
           onsubmit="window.open('https://tinyletter.com/iampuneet', 'popupwindow');return true"
           method="POST">
-          <input type='text' name='email' className={styles.emailInputText}  id='tlemail' placeholder='hi@whatever.com' />
+          <input type='text' name='email' style={{ margin-right: ".5rem", display: "block", border: "2px solid #ccc", border-radius: "4px" padding: ".75rem", outline: "none" , margin-bottom: ".5rem",font-size: "1.1rem",font-weight: "500",width: "100%",max-width: "100%" ,line-height: "1" }}  id='tlemail' placeholder='hi@whatever.com' />
           <input type="submit" name="submit" className={styles.subscribeButton} id="submit-sidebar" value="Submit" /> 
         </form>
       </section>
