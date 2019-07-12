@@ -88,7 +88,6 @@ a:hover {
 }
 
 input[type=text],
-input[type=email],
 textarea {
   border: 2px solid #111;
   height: 26px;
@@ -161,6 +160,15 @@ label {
   justify-content: space-between;
 }
 
+
+.blogListing {
+  margin-top: 5px;
+border: 1px solid grey;
+padding: 10px 10px 10px 10px;
+width: 75%;
+margin-bottom: 3px;
+}
+
 ::selection {
   background: #FFFF66;
 }
@@ -178,14 +186,6 @@ label {
   ol,
   ul {
     width: 100%;
-  }
-
-  .blogListing {
-    margin-top: 5px;
-    border: 1px solid grey;
-    padding: 10px 10px 10px 10px;
-    width: 75%;
-    margin-bottom: 3px;
   }
 
   .blogPost {

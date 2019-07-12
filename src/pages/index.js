@@ -52,7 +52,7 @@ export default ({ data }) => {
         <Link to={'/blog'}>Read about what I'm learning on my blog.</Link> Usually
         updated weekly.
       </p>
-      <p style = {{width : '100%'}}>
+      <p className={styles.width100}>
         The best way to keep up with what I'm doing is to subscribe to my
         newsletter below. I write about my journey in the tech industry and
         sprinkle in some useful advice.
