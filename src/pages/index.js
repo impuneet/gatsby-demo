@@ -56,18 +56,18 @@ export default ({ data }) => {
         newsletter below. I write about my journey in the tech industry and
         sprinkle in some useful advice.
       </p>
-      <section>
-        <div className={styles.container}>
-          <div className={styles.row}>
-            <div>
-              <h2>Subscribe to Our Newsletter</h2>
-            </div>
-            <form>
-              <input type="email" class="form-control" id="cta_newsletter_email" placeholder="Email..." />
-              <button type="submit" class="btn btn-primary mb-2">SUBSCRIBE</button>
-            </form>
-          </div>
-        </div>
+      <section className={styles.newsletterSection} >
+        <h2 className={styles.frontPage}>Join the Newsletter</h2>
+        <p>I write about JavaScript, programming, and front-end design. Join over <strong class="pink">6,000</strong> other developers in keeping up with my content. Unsubscribe whenever. <u>Never any spam, ads, or affiliate links.</u></p>
+        <form id="newsletter-form"
+          className  = {styles.newsletterForm}
+          action='https://tinyletter.com/iampuneet'
+          target='popupwindow'
+          onsubmit="window.open('https://tinyletter.com/iampuneet', 'popupwindow');return true"
+          method="POST">
+          <input type='text' name='email' id='tlemail' placeholder='hi@whatever.com' />
+          <input type="submit" name="submit" id="submit-sidebar" value="Submit" /> 
+        </form>
       </section>
       <p>
         If you want to keep up with a less polished version of me, I'm pretty
