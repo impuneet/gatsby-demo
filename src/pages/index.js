@@ -23,7 +23,7 @@ export default ({ data }) => {
       <p>I created this site to document everything I learn, and share a bit of <a href="https://www.iampuneet.in">myself</a> with the world. This website has no bullshit, no ads, no sponsored posts, and no paywalls. If you enjoy my content, please consider <a href="https://ko-fi.com/iampuneet" target="_blank">supporting what I do.</a></p>
       <Header headerText='Recent Blogs' />
       { data.allMarkdownRemark.edges.map(({ node }) => (
-        <div key='node.id'>
+        <div className='blogListing' key='node.id'>
           <div className='blogPost'>
             <p  className='blogHeader'>
               <Link

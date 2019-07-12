@@ -180,6 +180,14 @@ label {
     width: 100%;
   }
 
+  .blogListing {
+    margin-top: 5px;
+    border: 1px solid grey;
+    padding: 10px 10px 10px 10px;
+    width: 75%;
+    margin-bottom: 3px;
+  }
+
   .blogPost {
     display: block;
     margin-bottom: 1.4rem;
@@ -190,6 +198,7 @@ label {
     margin-bottom: 0;
   }
 }
+
 
 .gatsby-image-wrapper {
   width: 55%;
