@@ -139,61 +139,47 @@ Code
     }
   }
   &__form {
-    float: none;
-    font-family: $headings-font-family;
-    margin-top: 36px;
-    width: 100%;
-    @include media-breakpoint-up(lg) {
-      float: right;
-      margin-top: 0;
-      width: auto;
-    }
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    margin-bottom: 1.45rem;
     input[type=email] {
-      border-radius: 20px;
+      max-width: 400px;
+      margin-right: .5rem;
       display: block;
-      height: 43px;
-      margin-bottom: 10px;
-      margin-right: 5px;
-      min-width: auto;
-      position: relative;
-      top: -4px;
-      width: 100%;
-      @media screen and (min-width: 480px) {
-        display: inline-block;
-        margin-bottom: 0;
-        width: calc(100% - 160px);
-      }
-      @include media-breakpoint-up(lg) {
-        display: block;
-        margin-right: 16px;
-        width: auto;
-      }
-      @include media-breakpoint-up(lg) {
-        min-width: 290px;
-      }
-      @include media-breakpoint-up(xl) {
-        min-width: 334px;
-      }
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    padding: .75rem;
+    outline: none;
+    margin-bottom: .5rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    width: 100%;
+    max-width: 100%;
+    line-height: 1;
     }
     button[type=submit] {
-      border-radius: 20px;
-      display: block;
-      float: right;
-      font-size: 0.8rem;
-      font-weight: 700;
-      line-height: 3.2;
-      margin-left: auto;
-      padding: 0 32px;
-      width: 100%;
-      @media screen and (min-width: 480px) {
-        display: inline-block;
-        width: auto;
-      }
-      @include media-breakpoint-up(lg) {
-        display: block;
-        float: none;
-        margin-left: 0;
-      }
+      -webkit-appearance: none;
+    display: inline-block;
+    border: 2px solid #5183f5;
+    border-radius: 4px;
+    background: #5183f5;
+    color: #fff;
+    font-weight: 600;
+    font-family: -apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 1.1rem;
+    text-transform: none;
+    padding: .6rem .9rem;
+    margin: 0 0 .5rem;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    line-height: 1;
     }
   }
 }
@@ -212,17 +198,6 @@ Code
 
 .newsletterForm {
   display: flex;
-}
-
-form {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
 }
 
 
