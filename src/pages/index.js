@@ -31,7 +31,7 @@ export default ({ data }) => {
                 style={{
                   borderBottom: linkColor()
                 }}
-              > 
+              >
                 {node.frontmatter.title}
               </Link> 
             </p>
@@ -45,6 +45,7 @@ export default ({ data }) => {
         </div>
       ))}
       <p>
+        <br/><br/>
         Currently, I work with Angular, React, and Node.js. I'm also learning Microservice Architecture in Lamda.
         Down the line, I'm hoping to gain a good understanding of Javascript and CS
       fundamentals.{' '}
@@ -65,8 +66,8 @@ export default ({ data }) => {
           target='popupwindow'
           onsubmit="window.open('https://tinyletter.com/iampuneet', 'popupwindow');return true"
           method="POST">
-          <input type='text' name='email' id='tlemail' placeholder='hi@whatever.com' />
-          <input type="submit" name="submit" id="submit-sidebar" value="Submit" /> 
+          <input type='text' name='email' className={styles.emailInputText}  id='tlemail' placeholder='hi@whatever.com' />
+          <input type="submit" name="submit" className={styles.subscribeButton} id="submit-sidebar" value="Submit" /> 
         </form>
       </section>
       <p>
@@ -109,4 +110,3 @@ export const query = graphql`
     }
   }
 `
-/* className={styles.form-inline m-subscribe1__form} */
