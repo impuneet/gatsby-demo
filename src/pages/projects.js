@@ -5,7 +5,7 @@ import Img from 'gatsby-image'
 import Layout from '../components/layout'
 import Header from '../components/header'
 import styles from './projects.module.scss'
-import puneetGIF from '../assets/images/puneet.gif'
+import puneetGIF from '../assets/images/dev.png'
 export default ({ data }) => (
   <Layout>
     <Helmet>
@@ -21,7 +21,7 @@ export default ({ data }) => (
     </p>
     <hr />
     <h2>onebajaj.capital</h2>
-    <img src={puneetGIF} alt='' />
+    <img src={puneetGIF} alt='' className={styles.width60}/>
     <p>
       <b>Tools Used:</b> React, Gatsby, SCSS, and JavaScript
     </p>
