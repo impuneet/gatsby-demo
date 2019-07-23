@@ -21,7 +21,7 @@ export default ({ data }) => (
     </p>
     <hr />
     <h2>onebajaj.capital</h2>
-    <Img fluid={data.onebajaj.childImageSharp.fluid} alt='' />
+    <Img fluid={data.radhika.childImageSharp.fluid} alt='' />
     <p>
     </p>
     <p>
@@ -78,14 +78,14 @@ export default ({ data }) => (
 
 export const query = graphql`
   query {
-    radhika: file(relativePath: { eq: "assets/images/radhikadev.png" }) {
+    radhika: file(relativePath: { eq: "assets/images/puneet.gif" }) {
       childImageSharp {
         fluid(maxWidth: 1549, maxHeight: 890) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    onebajaj: file(relativePath: { eq: "assets/images/projects/puneet.gif" }) {
+    onebajaj: file(relativePath: { eq: "assets/images/puneet.gif" }) {
       childImageSharp {
         fluid(maxWidth: 1344, maxHeight: 526) {
           ...GatsbyImageSharpFluid
