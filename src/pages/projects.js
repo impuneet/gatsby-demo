@@ -21,7 +21,7 @@ export default ({ data }) => (
     </p>
     <hr />
     <h2>onebajaj.capital</h2>
-    <Img src={puneetGIF} alt='' />
+    <img src={puneetGIF} alt='' />
     <p>
       <b>Tools Used:</b> React, Gatsby, SCSS, and JavaScript
     </p>
