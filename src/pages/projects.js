@@ -85,9 +85,9 @@ export const query = graphql`
         }
       }
     }
-    onebajaj: file(relativePath: { eq: "assets/images/src/projects/puneet.gif" }) {
+    onebajaj: file(relativePath: { eq: "assets/images/projects/puneet.gif" }) {
       childImageSharp {
-        fluid(maxWidth: 1549, maxHeight: 890) {
+        fluid(maxWidth: 1344, maxHeight: 526) {
           ...GatsbyImageSharpFluid
         }
       }
