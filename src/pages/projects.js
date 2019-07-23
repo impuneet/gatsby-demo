@@ -5,7 +5,7 @@ import Img from 'gatsby-image'
 import Layout from '../components/layout'
 import Header from '../components/header'
 import styles from './projects.module.scss'
-import puneetGIF from '../assets/images/dev.png'
+import puneetGIF from '../assets/images/puneet.gif'
 export default ({ data }) => (
   <Layout>
     <Helmet>
