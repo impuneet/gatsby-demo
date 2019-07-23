@@ -78,16 +78,9 @@ export default ({ data }) => (
 
 export const query = graphql`
   query {
-    radhika: file(relativePath: { eq: "assets/images/puneet.gif" }) {
+    radhika: file(relativePath: { eq: "assets/images/dev.png" }) {
       childImageSharp {
         fluid(maxWidth: 1549, maxHeight: 890) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    onebajaj: file(relativePath: { eq: "assets/images/puneet.gif" }) {
-      childImageSharp {
-        fluid(maxWidth: 1344, maxHeight: 526) {
           ...GatsbyImageSharpFluid
         }
       }
