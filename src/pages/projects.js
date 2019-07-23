@@ -5,7 +5,7 @@ import Img from 'gatsby-image'
 import Layout from '../components/layout'
 import Header from '../components/header'
 import styles from './projects.module.scss'
-
+import puneetGIF from '../assets/images/puneet.gif'
 export default ({ data }) => (
   <Layout>
     <Helmet>
@@ -21,7 +21,7 @@ export default ({ data }) => (
     </p>
     <hr />
     <h2>onebajaj.capital</h2>
-    <Img fluid={data.radhika.childImageSharp.fluid} alt='' />
+    <Img src={puneetGIF} alt='' />
     <p>
       <b>Tools Used:</b> React, Gatsby, SCSS, and JavaScript
     </p>
