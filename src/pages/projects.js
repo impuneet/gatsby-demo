@@ -23,9 +23,6 @@ export default ({ data }) => (
     <h2>onebajaj.capital</h2>
     <Img fluid={data.radhika.childImageSharp.fluid} alt='' />
     <p>
-      
-    </p>
-    <p>
       <b>Tools Used:</b> React, Gatsby, SCSS, and JavaScript
     </p>
     <p>
@@ -81,7 +78,7 @@ export const query = graphql`
   query {
     radhika: file(relativePath: { eq: "assets/images/dev.png" }) {
       childImageSharp {
-        fluid(maxWidth: 1549, maxHeight: 890) {
+        fluid(maxWidth: 1347, maxHeight: 619) {
           ...GatsbyImageSharpFluid
         }
       }
