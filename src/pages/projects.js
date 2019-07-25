@@ -23,27 +23,26 @@ export default ({ data }) => (
     <h2>onebajaj.capital</h2>
     <img src={puneetGIF} alt='' className={styles.width60}/>
     <p>
-      <b>Tools Used:</b> React, Gatsby, SCSS, and JavaScript
+      <b>Investment Platform :</b> Bajaj Capital is India’s premier investment services group engaged inter-alia in the distribution of mutual funds, insurance, fixed deposits, bonds, loans et al.
     </p>
     <p>
       <a
         className={styles.source}
-        href='https://github.com/rmorabia/radhika.dev'
+        href=''
       >
-        View Source
+        View Case Study
       </a>
     </p>
 
     <h2>
-      <a href='https://radgithubsearch.netlify.com'>GitHub Repository Search</a>
+      <a href=''>Outgrow (Interactive Calculator & Quizzes)</a>
     </h2>
-    <Img fluid={data.github.childImageSharp.fluid} alt='' />
+    <iframe  frameborder="0"  scrolling="no" marginheight="0" marginwidth="0" width="790.32"  height="444"  type="text/html"  src="https://www.youtube.com/embed/1Bkoqqp1lro?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0"> </iframe>
     <p>
-      GitHub Repository Search app featuring use of query parameters, form
-      validation, mobile responsiveness, REST APIs, and more.
+      Interactive calculators that boost traffic & conversion.
     </p>
     <p>
-      <b>Tools Used:</b> Vue, Bootstrap, and JavaScript
+      <b>Tech Stack:</b> Node JS , React
     </p>
     <p>
       <a
