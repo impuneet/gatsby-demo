@@ -28,46 +28,57 @@ export default ({ data }) => (
     <p>
       <a
         className={styles.source}
-        href=''
+        href='https://www.onebajaj.capital/'
       >
         View Case Study
       </a>
     </p>
-
     <h2>
       <a href=''>Outgrow (Interactive Calculator & Quizzes)</a>
     </h2>
     <iframe  frameborder="0"  scrolling="no" marginheight="0" marginwidth="0" width="790.32"  height="444"  type="text/html"  src="https://www.youtube.com/embed/1Bkoqqp1lro?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0"> </iframe>
     <p>
-      Interactive calculators that boost traffic & conversion.
+      <b>About : </b>Interactive calculators that boost traffic & conversion.
     </p>
     <p>
-      <b>Tech Stack:</b> Node JS , React
+      <b>Tech Stack:</b> Node JS ,Angular, MongoDB ,Micro Service Architecture Serverless ,DynamoDB 
     </p>
     <p>
       <a
         className={styles.source}
-        href='https://github.com/rmorabia/github-repo-search'
+        href='https://www.producthunt.com/posts/outgrow-co'
       >
-        View Source
+        View Case Study
       </a>
     </p>
-
     <h2>
-      <a href='http://radtimeline.herokuapp.com/'>Timeline</a>
+      <a href=''>SEI Wealth Platform</a>
     </h2>
-    <Img fluid={data.timeline.childImageSharp.fluid} alt='' />
+    <iframe  frameborder="0"  scrolling="no" marginheight="0" marginwidth="0" width="790.32"  height="444"  type="text/html"  src="https://www.youtube.com/embed/iM9ESiXQFwM?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0"> </iframe>
     <p>
-      Timeline app featuring the ability to see events based on category, to see
-      future or past events, and to mark an event as attended or not. Uses
-      self-made event API with request validation on the back-end.
+      <b>About : </b>The SEI Wealth Platform (the Platform) is an outsourcing solution for wealth managers encompassing wealth processing services and wealth management programs, combined with business process expertise.
     </p>
     <p>
-      <b>Tools Used:</b> React, Node.js, Express, JavaScript, and CSS
+      <b>Tools Used:</b> Angular JS 1.6,Java (Struts Framework),Node JS
     </p>
     <p>
-      <a className={styles.source} href='https://github.com/rmorabia/timeline'>
-        View Source
+      <a className={styles.source} href=''>
+        View Case Study
+      </a>
+    </p>
+    <h2>
+      <a href=''>NETA App</a>
+    </h2>
+    <iframe  frameborder="0"  scrolling="no" marginheight="0" marginwidth="0" width="790.32"  height="444"  type="text/html"  src="https://www.youtube.com/embed/iM9ESiXQFwM?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0"> </iframe>
+    <p>
+      <b>About : </b>The app was launched on August 24, 2018, in the national capital with former president Pranab Mukherjee as chief guest, and former chief election commissioners S.Y. Quraishi and Nasim Zaidi in attendance.
+    </p>
+    <p>
+      <b>Tools Used:</b> Node JS ,Micro-Services,MongoDB,React JS,Lambda,Javascript 
+    </p>
+    <p>
+      <a className={styles.source} href=''>
+        View Case Study
       </a>
     </p>
   </Layout>
