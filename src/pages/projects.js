@@ -20,7 +20,9 @@ export default ({ data }) => (
       <a href='http://github.com/rmorabia'>GitHub</a>.
     </p>
     <hr />
-    <h2>onebajaj.capital</h2>
+    <h2>
+      <a href='https://onebajaj.capital'>Onebajaj.Capital</a>
+    </h2>
     <img src={puneetGIF} alt='' className={styles.width60}/>
     <p>
       <b>Investment Platform :</b> Bajaj Capital is India’s premier investment services group engaged inter-alia in the distribution of mutual funds, insurance, fixed deposits, bonds, loans et al.
@@ -34,7 +36,7 @@ export default ({ data }) => (
       </a>
     </p>
     <h2>
-      <a href=''>Outgrow (Interactive Calculator & Quizzes)</a>
+      <a href='https://outgrow.co/'>Outgrow (Interactive Calculator & Quizzes)</a>
     </h2>
     <iframe  frameborder="0"  scrolling="no" marginheight="0" marginwidth="0" width="790.32"  height="444"  type="text/html"  src="https://www.youtube.com/embed/1Bkoqqp1lro?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0"> </iframe>
     <p>
@@ -52,7 +54,7 @@ export default ({ data }) => (
       </a>
     </p>
     <h2>
-      <a href=''>SEI Wealth Platform</a>
+      <a href='https://seic.com'>SEI Wealth Platform</a>
     </h2>
     <iframe  frameborder="0"  scrolling="no" marginheight="0" marginwidth="0" width="790.32"  height="444"  type="text/html"  src="https://www.youtube.com/embed/iM9ESiXQFwM?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0"> </iframe>
     <p>
@@ -67,7 +69,7 @@ export default ({ data }) => (
       </a>
     </p>
     <h2>
-      <a href=''>NETA App</a>
+      <a href='https://neta.co.in/'>NETA App</a>
     </h2>
     <iframe  frameborder="0"  scrolling="no" marginheight="0" marginwidth="0" width="790.32"  height="444"  type="text/html"  src="https://www.youtube.com/embed/AHmZf4zXKGA?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0"> </iframe>
     <p>
