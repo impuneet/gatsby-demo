@@ -17,7 +17,7 @@ export default ({ data }) => (
     <p>Here is a selection of projects I am currently excited about.</p>
     <p>
       To see a full directory of my code and projects, check out my{' '}
-      <a href='http://github.com/rmorabia'>GitHub</a>.
+      <a href='https://github.com/impuneet'>GitHub</a>.
     </p>
     <hr />
     <h2>

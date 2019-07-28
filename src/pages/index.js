@@ -41,7 +41,6 @@ export default ({ data }) => {
             <p  className={styles.blogDescription} >This is a very short desciptions to the blog and we are touching this mid level description just for example purpose
             </p>
           </div>
-
         </div>
       ))}
       <p>
@@ -73,16 +72,16 @@ export default ({ data }) => {
       <p>
         If you want to keep up with a less polished version of me, I'm pretty
       active on Twitter at{' '}
-        <a href='http://twitter.com/radhikamorabia'>@radhikamorabia</a>.
+        <a href='https://twitter.com/iampuneet_in'>@iampuneet_in</a>.
       </p>
       <p>
-        I'm also on <a href='http://linkedin.com/in/rmorabia'>LinkedIn</a> and{' '}
-        <a href='http://github.com/rmorabia'>GitHub</a>.
+        I'm also on <a href='https://www.linkedin.com/in/puneet-sharma-888-ps/'>LinkedIn</a> and{' '}
+        <a href='https://github.com/impuneet'>GitHub</a>.
       </p>
       <p>
         <i>
           (Psst! If you're not here for developer stuff, check out my personal
-        site: <a href='http://rmorabia.com'>rmorabia.com</a>.)
+        site: <a href='https://iampuneet.in/'>iampuneet.in</a>.)
         </i>
       </p>
     </Layout>
