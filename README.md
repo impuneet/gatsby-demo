@@ -1,8 +1,6 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/e1c74f5f-7184-480b-86b9-6151c935c6bd/deploy-status)](https://app.netlify.com/sites/radhika/deploys) ![GitHub top language](https://img.shields.io/github/languages/top/rmorabia/radhika.dev.svg) ![Requires.io](https://img.shields.io/requires/github/rmorabia/radhika.dev.svg) ![GitHub repo size](https://img.shields.io/github/repo-size/rmorabia/radhika.dev.svg) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/rmorabia/radhika.dev.svg) ![GitHub](https://img.shields.io/github/license/rmorabia/radhika.dev.svg) ![Website](https://img.shields.io/website/https/radhika.dev.svg)
 
-# [radhika.dev](https://radhika.dev)
-
-![radhika.dev](https://raw.githubusercontent.com/rmorabia/radhika.dev/master/src/assets/images/radhikadev.png)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ee159f4d-53fa-4e57-98ab-4412adac0a97/deploy-status)](https://app.netlify.com/sites/zen-pare-8baa96/deploys) 
+# [iampuneet.in](https://iampuneet.in)
 
 This is the source code for my developer portfolio.
 
@@ -17,13 +15,13 @@ It's made with [Gatsby](http://gatsbyjs.org) and features code from these projec
 First, clone the repository locally using:
 
 ```sh
-git clone https://github.com/rmorabia/radhika.dev.git
+git@github.com:impuneet/iampuneet.in-blog.git
 ```
 
 Then, navigate to the repository using:
 
 ```sh
-cd radhika.dev
+cd iampuneet.in-blog
 ```
 
 Lastly, install the necessary Node modules using:
@@ -48,7 +46,7 @@ To run a live development server, use:
 gatsby develop
 ```
 
-All other scripts are in [package.json](https://github.com/rmorabia/radhika.dev/blob/master/package.json)
+All other scripts are in [package.json]
 
 ## Contributing
 Issues are welcome! If you see anything wrong with the site or want to suggest a new feature, please feel free to open a new issue.
