@@ -8,19 +8,19 @@ export default () => (
   <Layout>
     <Helmet>
       <meta charSet='utf-8' />
-      <title>Contact &bull; Radhika Morabia</title>
-      <link rel='canonical' href='https://radhika.dev/contact' />
+      <title>Contact &bull; Puneet Sharma</title>
+      <link rel='canonical' href='' />
     </Helmet>
     <Header headerText='Contact' />
     <p>
       If you would like to get in touch, email me at{' '}
-      <a href='mailto:hi@rmorabia.com'>hi@rmorabia.com</a> or use the contact
+      <a href='mailto:iampuneet.in@gmail.com'>iampuneet.in@gmail.com</a> or use the contact
       form below.
     </p>
     <p>
-      I am also on <a href='http://twitter.com/radhikamorabia'>Twitter</a>,{' '}
-      <a href='http://github.com/rmorabia'>GitHub</a>, and{' '}
-      <a href='http://linkedin.com/in/rmorabia'>LinkedIn</a>.
+      I am also on <a href='https://twitter.com/iampuneet_in'>Twitter</a>,{' '}
+      <a href='https://github.com/impuneet'>GitHub</a>, and{' '}
+      <a href='https://www.linkedin.com/in/puneet-sharma-888-ps/'>LinkedIn</a>.
     </p>
     <form
       name='contact'

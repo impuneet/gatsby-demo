@@ -69,7 +69,7 @@ export default ({ data }) => (
     <h2>
       <a href=''>NETA App</a>
     </h2>
-    <iframe  frameborder="0"  scrolling="no" marginheight="0" marginwidth="0" width="790.32"  height="444"  type="text/html"  src="https://www.youtube.com/embed/iM9ESiXQFwM?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0"> </iframe>
+    <iframe  frameborder="0"  scrolling="no" marginheight="0" marginwidth="0" width="790.32"  height="444"  type="text/html"  src="https://www.youtube.com/embed/AHmZf4zXKGA?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0"> </iframe>
     <p>
       <b>About : </b>The app was launched on August 24, 2018, in the national capital with former president Pranab Mukherjee as chief guest, and former chief election commissioners S.Y. Quraishi and Nasim Zaidi in attendance.
     </p>
