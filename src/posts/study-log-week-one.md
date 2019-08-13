@@ -15,6 +15,8 @@ tags:
 - design-pattern
 
 
+description: 'A Very little Design and Architecture knowledge are spread around NODEJS eco-system. You already know about MVC but MVC here can be delivery mechanism,not an application architecture.'
+
 categories:
 
 - JavaScript
