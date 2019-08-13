@@ -1,6 +1,7 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import { graphql } from 'gatsby'
+import {SEO}  from '../components/SEO'
 import Layout from '../components/layout'
 
 export default ({ data }) => {
@@ -9,7 +10,10 @@ export default ({ data }) => {
     <Layout>
       <Helmet>
         <meta charSet='utf-8' />
-        <title>{post.frontmatter.title} &bull; Radhika Morabia</title>
+        <title>{post.frontmatter.title} &bull; Puneet Sharma</title>
+        <SEO title={post.frontmatter.title}
+        description={post.frontmatter.description}
+          ></SEO>
       </Helmet>
       <div>
         <h1>{post.frontmatter.title}</h1>
@@ -45,6 +49,7 @@ export const query = graphql`
       html
       frontmatter {
         title
+        description
         date(formatString: "MMMM DD, YYYY")
       }
     }
