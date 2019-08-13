@@ -3,7 +3,8 @@ date: 2019-04-09
 title: 'Arrow functions in ES6'
 template: post
 thumbnail: '../thumbnails/snake.png'
-slug: understanding-streams-in-node-js
+description : 'Arrow function is the most powerful feature in ES6, especially in typescript.Like, look into one simple statement forEach.Normal Statement with a callback function.'
+slug: arrow-functions-in-node-js
 categories:
   - JavaScript
 tags:

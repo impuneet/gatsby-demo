@@ -3,6 +3,7 @@ date: 2019-04-09
 title: 'Structuring Your Node JS Application'
 template: post
 thumbnail: '../thumbnails/snake.png'
+description : 'A Very little Design and Architecture knowledge are spread around NODEJS eco-system. You already know about MVC but MVC here can be delivery mechanism,not an application architecture.'
 slug: understanding-streams-in-node-js
 categories:
   - JavaScript
