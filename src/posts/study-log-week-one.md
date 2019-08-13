@@ -1,16 +1,28 @@
 ---
-date: 2019-04-09
+
 title: 'Structuring Your Node JS Application'
-template: post
-description : 'A Very little Design and Architecture knowledge are spread around NODEJS eco-system. You already know about MVC but MVC here can be delivery mechanism,not an application architecture.'
-slug: understanding-streams-in-node-js
-categories:
-  - JavaScript
+
+date: "2019-04-09"
+
+slug: 'structuring-nodejs-application'
+
 tags:
-  - javascript
-  - terminal
-  - node
+
+- javascript
+
+- nodejs
+
+- design-pattern
+
+
+categories:
+
+- JavaScript
+
+- Design Pattern
+
 ---
+
 
 A Very little Design and Architecture knowledge are spread around NODEJS eco-system. You already know about MVC but MVC here can be delivery mechanism,not an application architecture.Most of the Applications in NODEJS follows this pattern then what\'s wrong in that ?
 

@@ -1,15 +1,28 @@
 ---
-date: 2019-04-09
+
 title: 'Understanding Streams in Node JS'
-template: post
-description: 'Nodejs allows us to pipeline our tasks with the help of streams.Hence Node js works on single thread but this doesn't means we can't do two tasks or process at a time.This can be done via Child Processes in NodeJs.'
+
+date: "2019-04-09"
+
 slug: understanding-streams-in-node-js
-categories:
-  - JavaScript
+
 tags:
-  - javascript
-  - terminal
-  - node
+
+- javascript
+
+- nodejs
+
+- design-pattern
+
+description: 'Nodejs allows us to pipeline our tasks with the help of streams.Hence Node js works on single thread but this doesn't means we can't do two tasks or process at a time.This can be done via Child Processes in NodeJs.'
+
+
+categories:
+
+- JavaScript
+
+- Design Pattern
+
 ---
 
 As NodeJS is known for it\'s asynchronous nature and have many modules that we used in daily code base but don't get deeper into it.
