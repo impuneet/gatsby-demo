@@ -1,10 +1,12 @@
 ---
 
-title: 'Understanding Streams in Node JS'
+title: 'Arrow functions in ES6'
 
-date: "2019-04-09"
+date: 2019-04-09
 
-slug: understanding-streams-in-node-js
+slug: 'structuring-nodejs-application'
+
+description : 'Arrow function is the most powerful feature in ES6, especially in typescript.Like, look into one simple statement forEach.Normal Statement with a callback function.'
 
 tags:
 
@@ -14,8 +16,12 @@ tags:
 
 - design-pattern
 
-description: 'Nodejs allows us to pipeline our tasks with the help of streams.Hence Node js works on single thread but this doesn't means we can't do two tasks or process at a time.This can be done via Child Processes in NodeJs.'
 
+categories:
+
+- JavaScript
+
+- Design Pattern
 
 ---
 
