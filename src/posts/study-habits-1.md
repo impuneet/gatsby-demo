@@ -17,12 +17,6 @@ tags:
 description: 'Nodejs allows us to pipeline our tasks with the help of streams.Hence Node js works on single thread but this doesn't means we can't do two tasks or process at a time.This can be done via Child Processes in NodeJs.'
 
 
-categories:
-
-- JavaScript
-
-- Design Pattern
-
 ---
 
 As NodeJS is known for it\'s asynchronous nature and have many modules that we used in daily code base but don't get deeper into it.
