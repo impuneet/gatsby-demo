@@ -6,7 +6,7 @@ date: 2019-04-09
 
 slug: 'structuring-nodejs-application'
 
-description: 'Nodejs allows us to pipeline our tasks with the help of streams.Hence Node js works on single thread but this doesn't means we can't do two tasks or process at a time.This can be done via Child Processes in NodeJs.'
+description: 'Nodejs allows us to pipeline our tasks with the help of streams.Hence Node js works on single thread but this does not means we can not do two tasks or process at a time.This can be done via Child Processes in NodeJs.'
 
 tags:
 
@@ -16,19 +16,12 @@ tags:
 
 - design-pattern
 
-
-categories:
-
-- JavaScript
-
-- Design Pattern
-
 ---
 
 As NodeJS is known for it\'s asynchronous nature and have many modules that we used in daily code base but don't get deeper into it.
 One of the core modules is Streams.Streams allow us to handle data flow asynchronously.Two data handling approaches are there in NodeJS.
 **1. Buffered approach**: Buffered approach say that reciever can read the data only if whole data is written to the buffer.
- 
+
 **2. Streams approach**:In Streamed approach data arrives in chunks and also can be read in chunks this can be a  single part of the data.
 
 ![These are the  Streams available](https://res.cloudinary.com/dwnvnfejf/image/upload/v1562829945/blog/stream-nodejs/stream-types-300x248.png)
