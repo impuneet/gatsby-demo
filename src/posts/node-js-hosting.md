@@ -47,7 +47,8 @@ categories:
 
 Our Node.js selector allows you to easily set up Node.js applications with the cPanel graphical interface or at the command line.You also get the advantage of our high performance SwiftServer platform. Choose our Turbo Servers for an even bigger speed boost. They provide up to 20X faster performance than competing Node.js hosting providers!
 
-  
+  <a href="http://www.a2hosting.com?aid=5a126c2b036a0">Link to Discounts</a>
+
   [Click here to get to a2hosting with 80% discounts](http://www.a2hosting.com?aid=5a126c2b036a0)
 
 **What are the feature provided by a2hosting ?**
