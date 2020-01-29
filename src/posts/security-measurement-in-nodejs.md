@@ -67,7 +67,7 @@ First of all, you can sanitize user data, on input. This is very easy to impleme
 ***Using the Helmet module***
 
 Helmet helps you secure your Express applications by setting various HTTP headers, like:
-The X-Frame-Options HTTP response header can be used to indicate whether or not a browser should be allowed to render a page in a <frame>, <iframe>,<embed> or <object>.
+The X-Frame-Options HTTP response header can be used to indicate whether or not a browser should be allowed to render a page in a frame,iframe ,emberd or object.
 
 Sites can use this to avoid clickjacking attacks, by ensuring that their content is not embedded into other sites.
 
@@ -164,8 +164,6 @@ app.use(function (req, res, next) {
 })
 
 ```
-
-
 
 ### Conclusion
 
