@@ -82,12 +82,14 @@ In the example above, Facepamphlet could mitigate clickjacking attacks by settin
 https://helmetjs.github.io/docs/frameguard/
 
 ```js
+
 const helmet = require('helmet')
 
 app.use(helmet.frameguard({ action: 'sameorigin' }))
 ```
 
 ```js
+
 // Allow from a specific host.
 // Sets "X-Frame-Options: ALLOW-FROM http://example.com".
 // Note that browser support for this option is low!
@@ -143,6 +145,7 @@ https://www.npmjs.com/package/cookie-session
 
 
 ```js
+
 var cookieSession = require('cookie-session')
 var express = require('express')
 var app = express()
