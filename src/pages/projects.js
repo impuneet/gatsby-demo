@@ -10,6 +10,7 @@ export default ({ data }) => (
   <Layout>
     <Helmet>
       <meta charSet='utf-8' />
+      <meta name="google-site-verification" content="7jBjfenjp4Lz2E2kUVj1V260CUmibcXulcrEQPolsGQ" />
       <title>Projects &bull; Puneet Sharma</title>
       <link rel='canonical' href='https://iampuneet.in/projects' />
     </Helmet>

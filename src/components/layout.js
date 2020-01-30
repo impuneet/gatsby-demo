@@ -28,10 +28,18 @@ export default ({ children }) => (
     `}
     render={data => (
       <div className='container'>
-        <Helmet>
+        <Helmet
+        
+        meta={[
+          { name: 'description', content: 'Your description here' },
+          { name: 'google-site-verification', content: '7jBjfenjp4Lz2E2kUVj1V260CUmibcXulcrEQPolsGQ' }
+          ]}
+        >
           <meta charSet='utf-8' />
+          <meta name="google-site-verification" content="7jBjfenjp4Lz2E2kUVj1V260CUmibcXulcrEQPolsGQ" />
           <title>{data.site.siteMetadata.title}</title>
           <link rel='canonical' href='https://radhika.dev' />
+          
           <link rel='icon' type='image/png' href={favicon} />
         </Helmet>
         <Canvas />

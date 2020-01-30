@@ -10,6 +10,7 @@ export default ({ data }) => {
     <Layout>
       <Helmet>
         <meta charSet='utf-8' />
+        <meta name="google-site-verification" content="7jBjfenjp4Lz2E2kUVj1V260CUmibcXulcrEQPolsGQ" />
         <title>{post.frontmatter.title} &bull; Puneet Sharma</title>
         <SEO title={post.frontmatter.title}
         description={post.frontmatter.description}
