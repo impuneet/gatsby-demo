@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'iampuneet',
-    titleTemplate: '%s · Puneet',
+    titleTemplate: 'Puneet',
     description: 'Full-Stack Software Engineer interested in Node,Angular & React,JavaScript, and MongoDB',
     url: 'http://iampuneet.in'
   },
@@ -16,6 +16,13 @@ module.exports = {
         name: 'src',
         path: `${__dirname}/src/`,
       },
+    },
+    {
+      resolve: 'gatsby-plugin-google-analytics',
+      options: {
+        trackingId: 'UA-155135587-1',
+        head: true,
+      }
     },
     {
       resolve: 'gatsby-transformer-remark',
