@@ -4,7 +4,7 @@ module.exports = {
     titleTemplate: 'Puneet',
     description: 'Full-Stack Software Engineer interested in Node,Angular & React,JavaScript, and MongoDB',
     url: 'https://iampuneet.in',
-    siteUrl: 'https://yoursite.com'
+    siteUrl: 'https://iampuneet.com'
   },
   plugins: [
     'gatsby-plugin-sass',
