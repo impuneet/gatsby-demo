@@ -3,10 +3,12 @@ module.exports = {
     title: 'iampuneet',
     titleTemplate: 'Puneet',
     description: 'Full-Stack Software Engineer interested in Node,Angular & React,JavaScript, and MongoDB',
-    url: 'http://iampuneet.in'
+    url: 'https://iampuneet.in',
+    siteUrl: 'https://yoursite.com'
   },
   plugins: [
     'gatsby-plugin-sass',
+    'gatsby-plugin-sitemap',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     'gatsby-plugin-react-helmet',
