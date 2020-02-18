@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'iampuneet',
+    title: 'iampuneet | Enterprise Typescript & Node JS Application Developer | Microservices Architecture',
     titleTemplate: 'Puneet',
     description: 'Full-Stack Software Engineer interested in Node,Angular & React,JavaScript, and MongoDB',
     url: 'https://iampuneet.in',
