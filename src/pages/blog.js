@@ -21,31 +21,43 @@ export default ({ data }) => {
           <link rel='canonical' href='https://iampuneet.in/blog' />
         </Helmet>
         <Header headerText='Blog' />
-        <section className='articleContainer'>
-          {data.allMarkdownRemark.edges.map(({ node }) => (
-            <div key='node.id'>
-              <div className='blogPost'>
-                <p>
-                  <Link
-                    to={node.fields.slug}
-                    style={{
-                      borderBottom: linkColor()
-                    }}
-                  >
-                    {node.frontmatter.title}
-                  </Link>
-                </p>
-                <p>{node.frontmatter.date}</p>
-              </div>
+
+        <div className="row" >
+          <div className="leftcolumn">
+            <section className='articleContainer'>
+              {data.allMarkdownRemark.edges.map(({ node }) => (
+                <div key='node.id'>
+                  <div className='blogPost'>
+                    <p>
+                      <Link
+                        to={node.fields.slug}
+                        style={{
+                          borderBottom: linkColor()
+                        }}
+                      >
+                        {node.frontmatter.title}
+                      </Link>
+                    </p>
+                    <p>{node.frontmatter.date}</p>
+                  </div>
+                </div>
+              ))}
+            </section>
+          </div>
+          <div className="rightcolumn">
+            <div className="card">
+              <h2>About Me</h2>
+              <div className="fakeimg" style="height:100px;">Image</div>
+              <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
             </div>
-          ))}
-        </section>
-        <div className='articleSideContent'>
-          <p className='trending'> 
-              Trending Posts
-          </p>
-        </div>
-      </div>
+            <div className="card">
+              <h3>Popular Post</h3>
+              <div className="fakeimg">Image</div><br>
+                <div className="fakeimg">Image</div><br>
+                  <div className="fakeimg">Image</div>
+            </div>
+            </div>
+          </div>
     </Layout>
   )
 }
