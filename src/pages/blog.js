@@ -44,7 +44,7 @@ export default ({ data }) => {
           <div className={styles.rightcolumn}>
             <div className={styles.card}>
               <h2>About Me</h2>
-              <div className={styles.fakeimg} style="height:100px;">Image</div>
+              <div className={styles.fakeimg} >Image</div>
               <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
             </div>
           </div>
