@@ -38,6 +38,8 @@ export default ({ data }) => {
                     </Link>
                   </p>
                   <p>{node.frontmatter.date}</p>
+                  <p>{node.frontmatter.tags}</p>
+                  <p>{node.frontmatter.description}</p>
                 </div>
               </div>
             ))}
@@ -68,6 +70,8 @@ export const query = graphql`
           frontmatter {
             title
             date(formatString: "MMMM DD, YYYY")
+            tags
+            description
           }
           excerpt
         }
