@@ -161,6 +161,7 @@ label {
 }
 
 
+
 .blogListing {
   margin-top: 5px;
 border: 1px solid grey;
@@ -204,3 +205,48 @@ margin-bottom: 3px;
   width: 55%;
   height: auto;
 }
+
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+
+.fakeimg {
+  background-color: #aaa;
+  height: 10px;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
