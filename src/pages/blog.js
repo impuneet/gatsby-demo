@@ -32,15 +32,15 @@ export default ({ data }) => {
                       to={node.fields.slug}
                       style={{
                         borderBottom: linkColor(),
-                        fontSize : '13px',
-                        font : 'italic bold 12px/30px Georgia, serif'
+                        fontWeight : '600',
+                        fontSize : '30px'
                       }}
                     >
                       {node.frontmatter.title}
                     </Link>
                   </p>
                   <p className="datedisplay">{node.frontmatter.date}</p>
-                  <p className="datedisplay">{node.frontmatter.description}</p>
+                  <p    className="descriptionDisplay">{node.frontmatter.description}</p>
                 </div>
               </div>
             ))}

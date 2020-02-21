@@ -169,9 +169,14 @@ label {
 }
 
 .datedisplay {
-  font-style: italic;
   font-weight: 100;
-  font-size: 0.5rem;
+  font-size: 12px;
+}
+
+.descriptionDisplay {
+  font-weight: 200;
+  font-size: 12px;
+  margin-top: -2%;
 }
 
 ::selection {
