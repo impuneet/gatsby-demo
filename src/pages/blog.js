@@ -33,7 +33,7 @@ export default ({ data }) => {
                       style={{
                         borderBottom: linkColor(),
                         fontSize : '13px',
-                        font : 'italic bold 12px/30px Georgia, serif';
+                        font : 'italic bold 12px/30px Georgia, serif'
                       }}
                     >
                       {node.frontmatter.title}
