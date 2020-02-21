@@ -31,15 +31,16 @@ export default ({ data }) => {
                     <Link
                       to={node.fields.slug}
                       style={{
-                        borderBottom: linkColor()
+                        borderBottom: linkColor(),
+                        fontSize : '13px',
+                        font : 'italic bold 12px/30px Georgia, serif';
                       }}
                     >
                       {node.frontmatter.title}
                     </Link>
                   </p>
-                  <p>{node.frontmatter.date}</p>
-                  <p>{node.frontmatter.tags}</p>
-                  <p>{node.frontmatter.description}</p>
+                  <p className="datedisplay">{node.frontmatter.date}</p>
+                  <p className="datedisplay">{node.frontmatter.description}</p>
                 </div>
               </div>
             ))}

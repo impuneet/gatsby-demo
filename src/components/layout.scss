@@ -160,14 +160,18 @@ label {
   justify-content: space-between;
 }
 
-
-
 .blogListing {
   margin-top: 5px;
-border: 1px solid grey;
-padding: 10px 10px 10px 10px;
-width: 75%;
-margin-bottom: 3px;
+  border: 1px solid grey;
+  padding: 10px 10px 10px 10px;
+  width: 75%;
+  margin-bottom: 3px;
+}
+
+.datedisplay {
+  font-style: italic;
+  font-weight: 100;
+  font-size: 0.5rem;
 }
 
 ::selection {
@@ -247,6 +251,3 @@ margin-bottom: 3px;
   display: table;
   clear: both;
 }
-
-
-
