@@ -21,8 +21,8 @@ export default ({ data }) => {
           <link rel='canonical' href='https://iampuneet.in/blog' />
         </Helmet>
         <Header headerText='Blog' />
-        <div className="row">
-          <div className="leftcolumn">
+        <div className={styles.row}>
+          <div className={styles.leftcolumn}>
             {data.allMarkdownRemark.edges.map(({ node }) => (
               <div key='node.id'>
                 <div className='blogPost'>
@@ -41,10 +41,10 @@ export default ({ data }) => {
               </div>
             ))}
           </div>
-          <div className="rightcolumn">
-            <div className="card">
+          <div className={styles.rightcolumn}>
+            <div className={styles.card}>
               <h2>About Me</h2>
-              <div className="fakeimg" style="height:100px;">Image</div>
+              <div className={styles.fakeimg} style="height:100px;">Image</div>
               <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
             </div>
           </div>
