@@ -8,13 +8,7 @@ slug: 'structuring-nodejs-application'
 
 description: 'Nodejs allows us to pipeline our tasks with the help of streams.Hence Node js works on single thread but this does not means we can not do two tasks or process at a time.This can be done via Child Processes in NodeJs.'
 
-tags:
-
-- javascript
-
-- nodejs
-
-- design-pattern
+tags: ["javascript", "nodejs", "streams"]
 
 ---
 

@@ -4,13 +4,8 @@ title: 'Security Measurement in Node js'
 
 date: "2020-01-27"
 
-tags:
+tags: ["javascript", "nodejs", "security"]
 
-- javascript
-
-- nodejs
-
-- security
 
 description: "Node js security measurement are highly recommended in creating rest api."
 

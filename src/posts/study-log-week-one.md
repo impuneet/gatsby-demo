@@ -6,14 +6,7 @@ date: "2019-04-09"
 
 slug: 'structuring-nodejs-application'
 
-tags:
-
-- javascript
-
-- nodejs
-
-- design-pattern
-
+tags: ["javascript", "nodejs", "design-pattern"]
 
 description: 'A Very little Design and Architecture knowledge are spread around NODEJS eco-system. You already know about MVC but MVC here can be delivery mechanism,not an application architecture.'
 

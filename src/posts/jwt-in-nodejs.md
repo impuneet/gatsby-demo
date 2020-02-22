@@ -4,13 +4,7 @@ title: 'Authorization & Authentication in Node JS'
 
 date: "2020-01-27"
 
-tags:
-
-- javascript
-
-- nodejs
-
-- security
+tags:  ["javascript", "nodejs", "security"]
 
 description: "JWT Token based Authorization"
 

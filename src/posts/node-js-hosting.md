@@ -10,38 +10,19 @@ date: "2019-09-24"
 
   
 
-tags:
-
-  
-
-- javascript
-
-  
-
-- nodejs
-
-  
-
-- design-pattern
-
-  
+tags: ["javascript", "nodejs", "hosting"]
 
 description: "While most hosts only offer Node.js Hosting on their VPSes, we've optimized our Web Hosting servers for Node.js. We've even tested and documented our easy Node.js setup process so you can get down to business developing."
 
-  
-  
 
 categories:
 
-  
 
 - NodeJs Hosting
 
-  
 
 - a2hosting
 
-  
 
 ---
 
